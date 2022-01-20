@@ -23,8 +23,8 @@ RUN echo 'export PATH="$PATH:/home/gitpod/flutter/bin"' >> /home/gitpod/.bashrc
 # Install Open JDK
 USER root
 RUN apt update \
-    && apt install openjdk-8-jdk -y \
-    && update-java-alternatives --set java-1.8.0-openjdk-amd64
+    && apt install openjdk-11-jdk -y
+# && update-java-alternatives --set java-1.8.0-openjdk-amd64
 
 # Install SDK Manager
 USER gitpod
