@@ -59,6 +59,10 @@ ports:
   - port: 8080
     onOpen: open-preview
 
+github:
+  prebuilds:
+    master: true
+
 vscode:
   extensions:
     - dart-code.flutter
